@@ -1,0 +1,67 @@
+.promo 
+	position relative
+	height 685px
+	
+	&__slider
+		height 100%
+		
+		&-pagination
+			position absolute
+			left 0
+			bottom 42px !important
+			text-align center
+			z-index 1
+			
+			.swiper-pagination-bullet
+				width 14px
+				height 14px
+				margin 0 !important
+				border-radius 50%
+				background-color #FFF 
+				text-indent: -999px
+				overflow hidden
+				opacity 1
+				trs()
+				
+				&:not(:last-child)
+					margin-right 8px !important
+				
+				&:not(.swiper-pagination-bullet-active):hover
+					opacity .6
+					
+				&-active
+					background-color: #EBAB0F
+
+	
+	&__slide
+		height 685px
+		display flex
+		justify-content center
+		background-repeat no-repeat
+		background-position: center
+		background-size: cover
+		
+		&--first
+			background-image: url(../img/promo-bg-1.jpg)
+			
+		&--second
+			background-image: url(../img/promo-bg-2.jpg)
+			
+		&--third
+			background-image: url(../img/promo-bg-3.jpg)
+	
+	&__info 
+		width 100%
+		
+	
+	&__title
+		margin-bottom 20px
+		font 700 6.6rem/7.4rem font-second
+		color brown
+
+	
+	&__descr
+		font 400 3rem/4rem font-decor
+		color brown
+
+
