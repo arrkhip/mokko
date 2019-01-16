@@ -1,6 +1,7 @@
 $(document).ready(function () {
   // promo slider
   var swiper = new Swiper('.promo__slider', {
+  	speed: 700,
   	pagination: {
   		el: '.promo__slider-pagination',
   		clickable: true,
