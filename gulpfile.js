@@ -70,7 +70,7 @@ let path = {
   },
   watch: {
     html: "./app/html/**/*.html",
-    css: "app/stylus/**/*.styl",
+    css: ["app/stylus/**/*.styl", "app/blocks/**/*.styl"],
     js: "app/js/common.js",
     img: "app/img/**/*.+(jpg|jpeg|png|gif|ico)",
     svg: "app/img/svg/*.svg"
