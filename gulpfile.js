@@ -42,7 +42,7 @@ let gulp = require("gulp"),
 let path = {
   app: {
     html: "./app/html/**/*.html",
-    css: "./app/stylus/main.styl",
+    css: "./app/stylus/style.styl",
     js: "./app/js/common.js",
     img: "./app/img/**/*.+(jpg|jpeg|png|gif|ico)",
     svg: "./app/img/svg/*.svg",
@@ -106,7 +106,7 @@ gulp.task("styles", function () {
     }))
     .pipe(autoprefixer(["last 5 versions"]))
     .pipe(rename({
-      basename: "main",
+      basename: "style",
       suffix: ".min",
     }))
     .pipe(cleanCSS())
