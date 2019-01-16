@@ -11,7 +11,7 @@ const rl = createInterface(process.stdin, process.stdout);
 const BLOCKS_DIR = path.join(__dirname, 'app/blocks/');
 
 const fileSources = {
-  styl: `.{blockName} \n`
+  styl: `.{blockName} \n \t display block`
 };
 
 function validateBlockName(blockName) {

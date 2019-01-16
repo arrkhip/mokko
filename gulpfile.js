@@ -45,6 +45,7 @@ let path = {
     css: "./app/stylus/style.styl",
     js: "./app/js/common.js",
     img: "./app/img/**/*.+(jpg|jpeg|png|gif|ico)",
+    imgBlock: "app/blocks/**/*.+(jpg|jpeg|png|gif|ico)",
     svg: "./app/img/svg/*.svg",
     fonts: "./app/fonts/**/*.+(ttf|eot|woff|svg)"
   },
@@ -54,6 +55,7 @@ let path = {
     fonts: "./dist/fonts/",
     js: "./dist/js/",
     img: "./dist/img/",
+    imgBlock: "./dist/img/",
     svg: "./dist/img/"
   },
   libs: {
@@ -73,6 +75,7 @@ let path = {
     css: ["app/stylus/**/*.styl", "app/blocks/**/*.styl"],
     js: "app/js/common.js",
     img: "app/img/**/*.+(jpg|jpeg|png|gif|ico)",
+    imgBlock: "app/blocks/**/*.+(jpg|jpeg|png|gif|ico)",
     svg: "app/img/svg/*.svg"
   }
 };
@@ -180,6 +183,13 @@ gulp.task("image-min", function () {
     .pipe(gulp.dest(path.dest.img).on("error", notify.onError()));
 });
 
+gulp.task("image-min:block", function () {
+  return gulp.src(path.app.imgBlock)
+    .pipe(rename({dirname: ''}))
+    .pipe(imageMin())
+    .pipe(gulp.dest(path.dest.img).on("error", notify.onError()));
+});
+
 gulp.task("fonts", function () {
   return gulp.src(path.app.fonts)
     .pipe(gulp.dest(path.dest.fonts))
@@ -190,6 +200,7 @@ gulp.task("watch", function () {
   gulp.watch(path.watch.html, gulp.series("html"));
   gulp.watch(path.watch.js, gulp.series("js"));
   gulp.watch(path.watch.img, gulp.series("image-min"));
+  gulp.watch(path.watch.imgBlock, gulp.series("image-min:block"));
   gulp.watch(path.watch.svg, gulp.series('svgSprite'));
 });
 
@@ -197,6 +208,7 @@ gulp.task("default", gulp.parallel(
   "watch",
   "browser-sync",
   "image-min",
+  "image-min:block",
   "svgSprite",
   "fonts",
   "html",
@@ -211,6 +223,7 @@ gulp.task("build", gulp.series(gulp.parallel(
   "styles",
   "js",
   "image-min",
+  "image-min:block",
   "svgSprite",
   "fonts"
 )));
