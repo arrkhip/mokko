@@ -1,0 +1,121 @@
+.footer
+	padding 45px 0
+	background-color: #F2E4D3
+	
+	.grid
+		display flex
+		justify-content space-between
+		align-items flex-start
+		
+	&__nav
+		display flex
+		align-items flex-start
+	
+		&-list
+			&:not(:last-child)
+				margin-right 80px
+	
+		&-item
+			
+			&:not(:last-child)
+				margin-bottom 20px
+		
+			a
+				font-size 1.4rem
+			
+	&__contacts
+		
+		p 
+			margin-bottom 20px
+			font-size 1.4rem
+			line-height 2.4rem
+			font-weight 600
+			
+			span
+				font-weight 400
+				font-style italic
+				
+		a 
+			font-size 1.4rem
+			color #707070
+			trs()
+				
+			&:hover
+				opacity .8
+	
+	&__logo
+		display inline-block
+		margin-bottom 30px
+		
+		svg
+			width 200px
+			height 30px
+			fill brown
+	
+	&__social
+		display flex
+		align-items flex-end
+		margin-bottom 35px
+		
+		span
+			font-size 1.4rem
+		
+		svg
+			width 25px
+			height 25px
+			margin-left 15px
+			fill brown
+			
+			&:hover
+				opacity .8
+			
+	&__author
+		display flex
+		align-items flex-end
+		
+		span
+			margin-right 5px
+			font-size 1.4rem
+			
+		a
+			font-size 0
+			
+		svg
+			width 92px
+			height 10px
+			fill: grey
+			
+	+width-lg()
+		
+		&__nav-list:not(:last-child)
+			margin-right 30px
+			
+		&__nav-item
+			min-height 32px
+			
+		&__contacts
+			flex-shrink 2
+			margin 0 20px
+			
+
+	+width-sm()
+		position relative
+		padding-top 120px
+		
+		.grid
+			flex-direction column
+		
+		&__nav
+			margin-bottom 35px
+			
+			&-item
+				min-height auto
+			
+		&__contacts
+			margin 0 0 35px 
+			
+		&__logo
+			position absolute
+			top 50px
+
+		
