@@ -1,7 +1,7 @@
 .index-page
 	
 	&__plus
-		padding-bottom 60px
+		padding-bottom 15px
 		
 		&-list 
 			display flex
@@ -43,31 +43,31 @@
 			color brown
 	
 	&__sort
+		padding-top 45px
+		padding-bottom 95px
 		
-		.grid
+		&-decor 
+			display block
+			width 190px
+			height 60px
+			margin auto
+			margin-bottom 15px
+			fill brown-light
 		
-		&-slider
+		&-wrap
 			position relative
+			
+	&__hit
+		padding-bottom 65px
 		
-			&-arrow
-				position absolute
-				top 50%
-				width 65px
-				height 65px
-				border-radius 50%
-				background-color orange
-				z-index 2
+		&-wrap
+			position relative
 
-				&--prev
-					left 0
-					transform translate(-50%, -50%)
-					
-				&--next
-					right 0
-					transform translate(50%, -50%)
-		
 
 	+width-sm()
+	
+		&__plus
+			display none
 	
 		&__constructor
 			padding-top 120px

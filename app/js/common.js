@@ -14,13 +14,13 @@ $(document).ready(function () {
 
 
   //slider
-  var swiper = new Swiper('.index-page__sort-slider', {
+  var swiper = new Swiper('.slider-base', {
     slidesPerView: 4,
     spaceBetween: 30,
     loop: !0,
     navigation: {
-      nextEl: '.index-page__sort-slider-arrow--prev',
-      prevEl: '.index-page__sort-slider-arrow--next',
+      nextEl: '.slider-base__arrow--next',
+      prevEl: '.slider-base__arrow--prev',
     },
     breakpoints: {
       576: {
