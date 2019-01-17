@@ -48,20 +48,42 @@
 			background-image: url(../img/promo-bg-2.jpg)
 			
 		&--third
-			background-image: url(../img/promo-bg-3.jpg)
+			background-image: url("../img/promo-bg-3.jpg")
 	
 	&__info 
 		width 100%
 		
-	
 	&__title
 		margin-bottom 20px
 		font 700 6.6rem/7.4rem font-second
 		color brown
 
-	
 	&__descr
 		font 400 3rem/4rem font-decor
 		color brown
+	
+
+	+width-sm()
+		height 465px
+		
+		&__slider
+			
+			&-pagination
+				top 190px
+				bottom auto
+		
+		&__slide
+			height 225px
+			
+		&__info
+			margin-top 250px
+			
+		&__title
+			font-size 4.4rem
+			line-height 5.2rem
+		
+		&__descr
+			font-size 2.2rem
+			line-height 2.6rem
 
 
