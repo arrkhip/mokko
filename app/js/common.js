@@ -1,5 +1,13 @@
 $(document).ready(function () {
 
+  // header
+
+  $('.header__switch').click(function() {
+    $('.header__switch svg').toggleClass('active');
+    $('.header__list').slideToggle(300);
+  });
+
+
   // promo slider
   var swiper = new Swiper('.promo__slider', {
   	speed: 700,
@@ -13,28 +21,7 @@ $(document).ready(function () {
   });
 
 
-  //slider
-  // var swiper = new Swiper('.slider-base', {
-  //   slidesPerView: 4,
-  //   spaceBetween: 30,
-  //   loop: !0,
-  //   navigation: {
-  //     nextEl: '.slider-base__arrow--next',
-  //     prevEl: '.slider-base__arrow--prev',
-  //   },
-  //   breakpoints: {
-  //     576: {
-  //       slidesPerView: 1
-  //     },
-  //     768: {
-  //       slidesPerView: 2
-  //     },
-  //     1200: {
-  //       slidesPerView: 3
-  //     }
-  //   }
-  // });
-
+  // slider-base
   var mySwiper = undefined;
   function initSwiper() {
     var screenWidth = $(window).width();
