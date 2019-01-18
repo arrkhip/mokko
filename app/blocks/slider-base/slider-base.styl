@@ -5,7 +5,7 @@
 	
 	&__arrow
 		position absolute
-		top 50%
+		top calc(50% - 35px)
 		display flex
 		justify-content center
 		align-items center
@@ -37,7 +37,12 @@
 			
 			svg
 				transform: rotate(180deg)
+					
+	&__btn
+		max-width 270px
+		margin-top 30px
 				
+
 	+width-sm()
 	
 		&__arrow
@@ -52,3 +57,10 @@
 			
 			&:not(:last-child)
 				margin-bottom 40px
+				
+		&__btn
+			display block
+			margin: auto 
+			margin-top 30px
+			background-color orange-dark
+			opacity: 1
