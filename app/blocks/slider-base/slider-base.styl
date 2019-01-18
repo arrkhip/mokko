@@ -37,3 +37,18 @@
 			
 			svg
 				transform: rotate(180deg)
+				
+	+width-sm()
+	
+		&__arrow
+			display none
+		
+		.swiper-wrapper
+			flex-direction column
+			align-items center
+			
+		.swiper-slide
+			width 270px
+			
+			&:not(:last-child)
+				margin-bottom 40px
