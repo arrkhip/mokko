@@ -7,6 +7,12 @@ $(document).ready(function () {
     $('.header__list').slideToggle(300);
   });
 
+  $('.header__nav-item').click(function(e){
+    e.preventDefault();
+    $('.header__nav-item-arrow').toggleClass('header__nav-item-arrow--active');
+    $(this).find('.header__nav-sublist').slideToggle();
+  });
+
 
   // promo slider
   var swiper = new Swiper('.promo__slider', {
