@@ -1,0 +1,35 @@
+.modal-entry
+	display none
+	max-width 1192px
+	width 90%
+	padding-top 90px
+	padding-bottom 110px
+	border-radius 10px
+	background #FFF
+	box-shadow 0px 3px 40px rgba(0, 0, 0, 0.18)
+	overflow-y auto
+	
+	.tabs__header
+		max-width 625px
+		margin auto
+	
+	&__form
+		display flex
+		flex-direction column
+		align-items center
+		
+	.input
+		width 300px
+		
+		&:not(:last-child)
+			margin-bottom 20px
+			
+
+	+width-sm()
+		position fixed
+		top 70px
+		left 0
+		height 100%
+		width 100%
+		border-radius 0
+		background-color: #F5F5F5

@@ -82,14 +82,15 @@
 				</div>
 
 				<div class="header__entry">
+					<a data-fancybox data-src="#modal-entry" href="javascript:;" class="header__entry-link"></a>
 					<svg class="header__entry-icon">
 						<use xlink:href="img/sprite.svg#user"></use>
 					</svg>
-					<svg class="header__entry-icon">
+					<svg class="header__entry-icon header__entry-icon--close">
 						<use xlink:href="img/sprite.svg#close"></use>
 					</svg>
 					<div class="header__entry-title">
-						<a href="#">Войти</a><span> / <a href="#">Регистрация</a></span>
+						<p>Войти<span> / Регистрация</span></p>
 					</div>
 				</div>
 
@@ -638,6 +639,36 @@
 		</footer>
 
 	</div>
+
+
+	<div class="modal-entry" id="modal-entry">
+		<div class="tabs">
+			<div class="tabs__header">
+				<div class="tabs__header-item tabs__header-item--active">Регистрация</div>
+				<div class="tabs__header-item">Вход</div>
+			</div>
+			<div class="tabs__content tabs__content--active">
+				<form class="modal-entry__form">
+					<input type="text" name="name" placeholder="Имя" class="input" />
+					<input type="text" name="surname" placeholder="Фамилия" class="input" />
+					<input type="text" name="email" placeholder="Адрес эл. почты" class="input" />
+					<input type="tel" name="tel" placeholder="Номер телефона" class="input" />
+					<input type="password" name="password" placeholder="Пароль" class="input" />
+					<input type="password" name="password-repeat" placeholder="Повторите пароль" class="input" />
+					<input type="submit" value="Зарегистрироваться" class="btn" />
+				</form>
+			</div>
+			<div class="tabs__content">
+				<form class="modal-entry__form">
+					<input type="text" name="email" placeholder="Адрес эл. почты" class="input" />
+					<input type="password" name="password" placeholder="Пароль" class="input" />
+					<input type="submit" value="Зарегистрироваться" class="btn" />
+				</form>
+			</div>
+		</div>
+	</div>
+
+
 
 	<script src="js/vendor.min.js"></script>
 	<script src="js/common.min.js"></script>
