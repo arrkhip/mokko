@@ -3,7 +3,7 @@ $(document).ready(function () {
   // header
 
   $('.header__switch').click(function() {
-    $('.header__switch svg').toggleClass('active');
+    $('.header__switch svg').toggle();
     $('.header__list').slideToggle(300);
   });
 
