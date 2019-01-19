@@ -37,9 +37,6 @@
 		max-width 570px
 		border-radius 15px
 		background #fff
-		
-		&--active
-			box-shadow 0px 3px 20px rgba(0, 0, 0, 0.26)
 
 		&-head
 			position relative
@@ -48,6 +45,9 @@
 			align-items center
 			height 45px
 			border-radius 15px
+			background-color #FFF
+			z-index 1
+			trs()
 			
 			&::after
 				content ''
@@ -100,16 +100,16 @@
 				width 10px
 				height 5px
 				fill #000
+				trs()
 
 		&-body
+			position absolute
+			top calc(100% - 10px)
+			left 0
 			display none
-			padding 20px 22px 25px
+			padding 30px 22px 25px
 			background-color #FFF
 			border-radius 0 0 15px 15px
-			// for active
-			position absolute
-			top 100%
-			left 0
 
 		&-item
 			display flex
@@ -141,6 +141,15 @@
 					
 					&:hover
 						opacity .8
+		
+		&--active
+			box-shadow 0px 3px 20px rgba(0, 0, 0, 0.26)
+			
+			.header__location-switch svg
+				transform rotate(180deg)
+				
+			.header__location-body
+				box-shadow 0px 3px 20px rgba(0, 0, 0, 0.26)
 
 
 	&__entry
