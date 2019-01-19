@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<title>Mokko | Открытая новость</title>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+	<link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="img/favicons/favicon.ico">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-config" content="img/favicons/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+
+	<link rel="stylesheet" href="css/vendor.min.css" />
+	<link rel="stylesheet" href="css/style.min.css" />
+
+	<link href="https://fonts.googleapis.com/css?family=Caveat|Merriweather:700|Open+Sans:400,400i,600,700" rel="stylesheet">
+</head>
+<body>
+
+	<div class="news-open-page">
+
+		<header class="header">
+			<div class="grid">
+				<a href="index.html" class="header__logo">
+					<svg>
+						<use xlink:href="img/sprite.svg#logo"></use>
+					</svg>
+				</a>
+
+				<div class="header__switch">
+					<svg>
+						<use xlink:href="img/sprite.svg#menu"></use>
+					</svg>
+					<svg>
+						<use xlink:href="img/sprite.svg#close"></use>
+					</svg>
+					<span>Меню</span>
+				</div>
+
+				<div class="header__location">
+					<div class="header__location-head">
+						<div class="header__location-title">
+							<svg>
+								<use xlink:href="img/sprite.svg#location"></use>
+							</svg>
+							<span>Все адреса</span>
+						</div>
+						<div class="header__location-switch">
+							<svg>
+								<use xlink:href="img/sprite.svg#arrow-1"></use>
+							</svg>
+						</div>
+					</div>
+					<div class="header__location-body">
+						<div class="header__location-item">
+							<span>1</span>
+							<p>
+								Бакалинская, 22/2, <span>тел.</span> 253 21 00,  10:00-22:00 <span>(самовывоз)</span>
+								<a href="#" target="_blank">Показать на карте</a>
+							</p>
+						</div>
+						<div class="header__location-item">
+							<span>2</span>
+							<p>
+								50 <span>лет</span> СССР, 43, <span>тел.</span> 248 93 93, <span>пн-пт</span>  9:00-22:00, <span>сб-вс</span> 10:00-21:00
+								<a href="#" target="_blank">Показать на карте</a>
+							</p>
+						</div>
+						<div class="header__location-item">
+							<span>3</span>
+							<p>
+								50 <span>лет</span> СССР, 43, <span>тел.</span> 248 93 93, <span>пн-пт</span>  9:00-22:00, <span>сб-вс</span> 10:00-21:00
+								<a href="#" target="_blank">Показать на карте</a>
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="header__entry">
+					<a data-fancybox data-src="#modal-entry" href="javascript:;" class="header__entry-link"></a>
+					<svg class="header__entry-icon">
+						<use xlink:href="img/sprite.svg#user"></use>
+					</svg>
+					<svg class="header__entry-icon header__entry-icon--close">
+						<use xlink:href="img/sprite.svg#close"></use>
+					</svg>
+					<div class="header__entry-title">
+						<p>Войти<span> / Регистрация</span></p>
+					</div>
+				</div>
+
+				<a href="#" class="header__cart">
+					<svg>
+						<use xlink:href="img/sprite.svg#cart"></use>
+					</svg>
+					<p>1 шт.</p>
+				</a>
+
+				<div class="header__list">
+
+					<nav class="header__nav">
+						<ul class="header__nav-list">
+							<li class="header__nav-item">
+								<a href="#">Каталог</a>
+								<svg class="header__nav-item-arrow">
+									<use xlink:href="img/sprite.svg#arrow-1"></use>
+								</svg>
+								<ul class="header__nav-sublist">
+									<li class="header__nav-subitem">
+										<a href="#">Торты</a>
+									</li>
+									<li class="header__nav-subitem">
+										<a href="#">Закуски</a>
+									</li>
+									<li class="header__nav-subitem">
+										<a href="#">Супы</a>
+									</li>
+									<li class="header__nav-subitem">
+										<a href="#">Горячие блюда</a>
+									</li>
+									<li class="header__nav-subitem">
+										<a href="#">Гарниры</a>
+									</li>
+									<li class="header__nav-subitem">
+										<a href="#">Выпечка, хлеб</a>
+									</li>
+									<li class="header__nav-subitem">
+										<a href="#">Блины</a>
+									</li>
+									<li class="header__nav-subitem">
+										<a href="#">Пирожные</a>
+									</li>
+									<li class="header__nav-subitem">
+										<a href="#">Полуфабрикаты</a>
+									</li>
+									<li class="header__nav-subitem">
+										<a href="#">Напитки</a>
+									</li>
+								</ul>
+							</li>
+							<li class="header__nav-item">
+								<a href="#">Калькулятор тортов</a>
+							</li>
+							<li class="header__nav-item">
+								<a href="#">Доставка и оплата</a>
+							</li>
+							<li class="header__nav-item">
+								<a href="#">Цены</a>
+							</li>
+							<li class="header__nav-item">
+								<a href="#">Портфолио</a>
+							</li>
+							<li class="header__nav-item">
+								<a href="#">О Кулинарии</a>
+							</li>
+							<li class="header__nav-item">
+								<a href="#">Новости и акции</a>
+							</li>
+							<li class="header__nav-item">
+								<a href="#">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="header__adds-mob">
+						<svg class="header__adds-mob-decor">
+							<use xlink:href="img/sprite.svg#decor-line"></use>
+						</svg>
+						<div class="header__adds-mob-list">
+							<p class="header__adds-mob-item">
+								Бакалинская, 22/2, <span>тел.</span> 253 21 00,  10:00-22:00 <span>(самовывоз)</span>
+								<a href="#" target="_blank">Показать на карте</a>
+							</p>
+							<p class="header__adds-mob-item">
+								50 <span>лет</span> СССР, 43, <span>тел.</span> 248 93 93, <span>пн-пт</span>  9:00-22:00, <span>сб-вс</span> 10:00-21:00
+								<a href="#" target="_blank">Показать на карте</a>
+							</p>
+							<p class="header__adds-mob-item">
+								50 <span>лет</span> СССР, 43, <span>тел.</span> 248 93 93, <span>пн-пт</span>  9:00-22:00, <span>сб-вс</span> 10:00-21:00
+								<a href="#" target="_blank">Показать на карте</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="grid">
+			<div class="breadcrumbs">
+				<a href="index.html" class="breadcrumbs__item">Главная</a>
+				<svg class="breadcrumbs__separator">
+					<use xlink:href="img/sprite.svg#arrow-1"></use>
+				</svg>
+				<span class="breadcrumbs__item">Новость</span>
+			</div>
+			<div class="headline">Мы работаем без выходных и всегда рады вас видеть</div>
+		</div>
+
+
+		<section class="news-page-open__article grid">
+			<div class="news-open-page__banner">
+				<img src="img/news-banner.jpg" alt="" />
+			</div>
+			<div class="news-open-page__info">
+				<p>Мало кто может остаться равнодушным, когда в воздухе витает аромат свежеиспеченной сдобы – булочек и плюшек, пирожков с самой разнообразной начинкой. Сочные пироги со свежими яблоками готовятся буквально у вас на глазах.</p>
+				<p>Особого внимания заслуживают кондитерские изделия кулинарии. Мы предлагаем Вам отведать великолепные торты с романтическими названиями: «Фантазия», «Любимый», «Восторг»; приготовленные по классическим рецептам миндальное, ореховое, кокосовое печенье; оригинальные по вкусу и очень красивые пирожные «Эстерхази», «Банановый рай», «Черный принц». А вкуснейшие пирожные с клубникой, персиком, виноградом и ананасом станут лучшим дополнением к чаепитию.</p>
+			</div>
+			<div class="news-open-page__gallery">
+				<a href="img/news-2.png" data-fancybox="images" data-caption="My caption" class="news-open-page__gallery-item">
+					<img src="img/news-2.png" alt="" />
+					<span>
+						<svg><use xlink:href="img/sprite.svg#search"></use></svg>
+					</span>
+				</a>
+				<a href="img/news-2.png" data-fancybox="images" data-caption="My caption" class="news-open-page__gallery-item">
+					<img src="img/news-2.png" alt="" />
+					<span>
+						<svg><use xlink:href="img/sprite.svg#search"></use></svg>
+					</span>
+				</a>
+				<a href="img/news-2.png" data-fancybox="images" data-caption="My caption" class="news-open-page__gallery-item">
+					<img src="img/news-2.png" alt="" />
+					<span>
+						<svg><use xlink:href="img/sprite.svg#search"></use></svg>
+					</span>
+				</a>
+				<a href="img/news-2.png" data-fancybox="images" data-caption="My caption" class="news-open-page__gallery-item">
+					<img src="img/news-2.png" alt="" />
+					<span>
+						<svg><use xlink:href="img/sprite.svg#search"></use></svg>
+					</span>
+				</a>
+				<a href="img/news-2.png" data-fancybox="images" data-caption="My caption" class="news-open-page__gallery-item">
+					<img src="img/news-2.png" alt="" />
+					<span>
+						<svg><use xlink:href="img/sprite.svg#search"></use></svg>
+					</span>
+				</a>
+				<a href="img/news-2.png" data-fancybox="images" data-caption="My caption" class="news-open-page__gallery-item">
+					<img src="img/news-2.png" alt="" />
+					<span>
+						<svg><use xlink:href="img/sprite.svg#search"></use></svg>
+					</span>
+				</a>
+			</div>
+			
+		</section>
+
+
+		<footer class="footer">
+			<div class="grid">
+				<nav class="footer__nav">
+					<ul class="footer__nav-list">
+						<li class="footer__nav-item">
+							<a href="#">Каталог</a>
+						</li>
+						<li class="footer__nav-item">
+							<a href="#">Калькулятор тортов</a>
+						</li>
+						<li class="footer__nav-item">
+							<a href="#">Доставка и оплата</a>
+						</li>
+						<li class="footer__nav-item">
+							<a href="#">Цены</a>
+						</li>
+					</ul>
+					<ul class="footer__nav-list">
+						<li class="footer__nav-item">
+							<a href="#">Портфолио</a>
+						</li>
+						<li class="footer__nav-item">
+							<a href="#">О кулинарии</a>
+						</li>
+						<li class="footer__nav-item">
+							<a href="#">Новости и акции</a>
+						</li>
+						<li class="footer__nav-item">
+							<a href="#">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="footer__contacts">
+					<p>Бакалинская, 22/2, <span>тел.</span> 253 21 00,  10:00-22:00 <span>(самовывоз)</span></p>
+					<p>50 лет СССР, 43, <span>тел.</span> 248 93 93, <span>пн-пт</span>  9:00-22:00, <span>сб-вс</span> 10:00-21:00</p>
+					<p>50 лет СССР, 43, <span>тел.</span> 248 93 93, <span>пн-пт</span>  9:00-22:00, <span>сб-вс</span> 10:00-21:00</p>
+					<a href="#">Политика конфиденциальности</a>
+				</div>
+				<div class="footer__info">
+					<a href="index.html" class="footer__logo">
+						<svg>
+							<use xlink:href="img/sprite.svg#logo"></use>
+						</svg>
+					</a>
+					<div class="footer__social">
+						<span>Мы в соц. сетях</span>
+						<a href="#" target="_blank">
+							<svg>
+								<use xlink:href="img/sprite.svg#vk"></use>
+							</svg>
+						</a>
+						<a href="#" target="_blank">
+							<svg>
+								<use xlink:href="img/sprite.svg#instagram"></use>
+							</svg>
+						</a>
+					</div>
+					<div class="footer__author">
+						<span>разработано в</span>
+						<a href="http://pandaworks.ru/" target="_blank">
+							<svg>
+								<use xlink:href="img/sprite.svg#panda-logo"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+
+	<div class="modal-entry" id="modal-entry">
+		<div class="tabs">
+			<div class="tabs__header">
+				<div class="tabs__header-item tabs__header-item--active">Регистрация</div>
+				<div class="tabs__header-item">Вход</div>
+			</div>
+			<div class="tabs__content tabs__content--active">
+				<form class="modal-entry__form">
+					<input type="text" name="name" placeholder="Имя" class="input" />
+					<input type="text" name="surname" placeholder="Фамилия" class="input" />
+					<input type="text" name="email" placeholder="Адрес эл. почты" class="input" />
+					<input type="tel" name="tel" placeholder="Номер телефона" class="input" />
+					<input type="password" name="password" placeholder="Пароль" class="input" />
+					<input type="password" name="password-repeat" placeholder="Повторите пароль" class="input" />
+					<input type="submit" value="Зарегистрироваться" class="btn" />
+				</form>
+			</div>
+			<div class="tabs__content">
+				<form class="modal-entry__form">
+					<input type="text" name="email" placeholder="Адрес эл. почты" class="input" />
+					<input type="password" name="password" placeholder="Пароль" class="input" />
+					<input type="submit" value="Зарегистрироваться" class="btn" />
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="js/vendor.min.js"></script>
+	<script src="js/common.min.js"></script>
+
+</body>
+</html>
