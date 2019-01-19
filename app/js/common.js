@@ -7,6 +7,10 @@ $(document).ready(function () {
     $('.header__list').slideToggle(300);
   });
 
+  $('.header__entry').click(function() {
+    $('.header__entry-icon').toggle();
+  });
+
   $('.header__nav-item').click(function(e){
     e.preventDefault();
     $('.header__nav-item-arrow').toggleClass('header__nav-item-arrow--active');
