@@ -1,0 +1,40 @@
+.breadcrumbs
+		padding-top 35px
+		padding-bottom 25px
+		overflow-x hidden
+		
+		&__item
+			font-size 1.2rem
+			color #707070
+
+		a&__item
+			position relative
+			display inline-block
+			trs()
+			
+			&::after
+				content ''
+				position absolute
+				top calc(100% + 3px)
+				left 0
+				width 100%
+				height 1px
+				background-color orange
+				transform translateX(-100%)
+				trs()
+			
+			&:hover
+				
+				&::after
+					transform translateX(0)
+				
+		&__separator
+			width 4px
+			height 2px
+			margin 0 8px 6px
+			vertical-align middle
+			fill brown
+			transform rotate(-90deg)
+				
+
+ 	 
