@@ -1,0 +1,38 @@
+.news-page
+	
+	&__list
+		display flex
+		flex-wrap wrap
+		justify-content space-between
+		
+		.card-news
+			margin-bottom 20px
+			
+	&__btn
+		max-width 270px
+		margin-top 20px
+		
+
+	+width-lg()
+		.card-news
+			max-width 300px
+			
+
+	+width-md()
+		.card-news
+			max-width 330px
+			
+
+	+width-sm()
+	
+		&__list
+			flex-direction column
+			align-items center
+			
+		.card-news
+			max-width 420px
+			
+		&__btn
+			display block
+			margin auto
+			margin-top 20px
