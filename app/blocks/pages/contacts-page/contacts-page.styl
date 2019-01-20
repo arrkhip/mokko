@@ -6,4 +6,38 @@
 		&-list
 			display flex
 			justify-content space-between
+			
+	+width-lg()
+		
+		&__vacancy-list
+			
+			.card-vacancy,
+			.form-feedback
+				max-width 300px
+				
+
+	+width-md()
+		
+		&__vacancy-list
+			flex-wrap wrap
+			
+			.card-vacancy,
+			.form-feedback
+				max-width 330px
+				
+			.card-vacancy 
+				margin-bottom 35px
 	
+
+	+width-sm()
+		
+		&__vacancy-list
+			flex-direction column
+			align-items center
+			
+			.card-vacancy,
+			.form-feedback
+				max-width 100%
+				
+			.card-vacancy
+				min-height auto
