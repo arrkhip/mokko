@@ -1,0 +1,111 @@
+.contacts
+	
+	.grid
+		display flex
+		
+	&__info
+		width 53%
+		padding 60px 30px
+		border-radius 15px 0 0 15px
+		overflow hidden
+		background-color rgba(242, 228, 211, .3) 
+
+		&-adds
+			
+			&-item
+				display flex
+				align-items flex-start
+				margin-bottom 25px
+				font-size 1.5rem
+				line-height 2.4rem
+					
+				& > span
+					font-weight 700
+					color brown-light
+					
+				p
+					margin-left 20px
+					font-weight 600
+					
+					span 
+						font-weight 400
+						font-style italic
+					
+					a 
+						display block
+						font-weight 400
+						font-style italic
+						text-decoration underline
+						trs()
+						
+						&:hover
+							opacity .8
+
+		&-mail
+			display flex
+			margin-top 10px
+			margin-bottom 30px
+			align-items center
+			padding-left 25px
+			
+			svg
+				width 22px
+				height 17px
+				margin-right 8px
+				fill brown-light
+				
+			a 
+				font-weight 600
+				font-size 1.5rem
+				trs()
+				
+				&:hover
+					color brown-light
+
+
+		&-social
+			padding-left 25px
+			
+			span
+				display inline-block
+				vertical-align middle
+				margin-right 10px
+				font-weight 600
+			
+			svg
+				vertical-align middle
+				width 34px
+				height 25px
+				fill brown-light
+				trs()
+				
+				&:hover
+					fill brown
+			
+				
+	&__map
+		width 47%
+		border-radius 0 15px 15px 0
+		overflow hidden
+		
+		img
+			width 100%
+			height 100%
+			object-fit cover
+			
+
+	+width-md()
+		
+		.grid
+			flex-direction column
+			
+		&__info,
+		&__map
+			width 100%
+			border-radius 15px
+			
+		&__map
+			order -1
+			margin-bottom 50px
+			height 300px
+			
