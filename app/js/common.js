@@ -120,8 +120,25 @@ $(window).on('resize', function(){
  });
 
 
-// map
+// product slider
+var galleryThumbs = new Swiper('.product__slider-thumbs', {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      freeMode: true,
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true,
+    });
+    var galleryTop = new Swiper('.product__slider-top', {
+      spaceBetween: 30,
+      slidesPerView: 1,
+      thumbs: {
+        swiper: galleryThumbs
+      }
+    });
 
+
+
+// map
    ymaps.ready(init);
    function init () {
     var myMap = new ymaps.Map('map', {
@@ -134,6 +151,5 @@ $(window).on('resize', function(){
       );
     myMap.geoObjects.add(myPlacemark);
   }
-
 
 });
