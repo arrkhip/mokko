@@ -57,9 +57,9 @@ img
   font-style italic
   font-size 1.5rem
   line-height 4.5rem
-  white-space: nowrap; 
-  overflow: hidden; 
-  text-overflow: ellipsis; 
+  white-space: nowrap 
+  overflow: hidden 
+  text-overflow: ellipsis 
   color #707070
   trs()
 
@@ -100,8 +100,83 @@ textarea:focus:-moz-placeholder
 textarea:focus:-ms-input-placeholder                 
 	color transparent 
 
+.checkbox
+  
+  &+&
+    margin-top 20px
+    
+  input
+    position absolute
+    z-index -1
+    opacity 0
+    
+    & + label 
+      position relative
+      padding-left 35px
+      font-size 1.5rem
+      
+      &:hover
+        cursor pointer
+        
+      &::before 
+        content '\2714'
+        position absolute
+        top 0
+        left 0
+        width 20px
+        height 20px
+        border-radius 2px
+        border 1px solid #b8b8b8
+        text-align center
+        line-height 2rem
+        color transparent
+          
+  &:checked + label::before
+    color orange
 
-.headline 
-  font 700 3rem/1 font-second
-  text-align center
-  color grey--dark
+
+.radio
+  
+  &+&
+    margin-top 20px
+    
+  input
+    position absolute
+    z-index -1
+    opacity 0
+    
+    & + label 
+      position relative
+      padding-left 35px
+      font-size 1.5rem
+      
+      &:hover
+        cursor pointer
+        
+      &::before 
+        content ''
+        position absolute
+        top 0
+        left 0
+        width 20px
+        height 20px
+        border-radius 50%
+        border 1px solid #b8b8b8
+        
+      &::after
+        content ''
+        position absolute
+        top 6px
+        left 6px
+        width 10px
+        height 10px
+        border-radius 50%
+        background-color orange
+        opacity 0
+          
+  &:checked + label::after
+    opacity 1
+
+
+
+

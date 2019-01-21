@@ -1,9 +1,93 @@
 .cart-page
 	
 	&__order
+		padding-bottom 135px
 		
 		&-list
 			
 			.card-product:not(:last-child)
 				margin-bottom 20px
+	
+	&__buy
+		max-width 955px
+		padding 50px 55px 100px
+		border 1px dashed #D6D6D6
+		border-radius 15px
+		
+		&-descr
+			font-size 1.5rem
+			line-height 2.4rem
+			
+			b 
+				font-weight 600
+				
+		&-form
+			padding-top 40px
+			
+		&-item
+			display flex
+			align-items center
+			
+			&:not(:first-child)
+				margin-top 20px
+				
+			input
+				width 100%
+				max-width 335px
+			
+			label
+				padding-left 35px
+		&-wrap
+			padding 35px 0
+			
+		&-box
+			padding-bottom 35px
+			
+		&-subtitle
+			font-size 1.5rem
+			font-weight 600
+			margin-bottom 15px
+			
+		&-confirm
+			display flex
+			align-items center
+			
+			.btn
+				max-width 335px
+				
+			p 
+				padding-left 35px
+				font-size 1.5rem
+				line-height 1.2rem
+				font-style italic
+				
+
+	+width-sm()
+	
+		&__order
+			padding-bottom 90px
+			
+		&__buy
+			padding 40px 15px 50px
+			
+			&-item
+				flex-direction column
+				align-items flex-start
+				
+				input
+					max-width 100%
+					
+				label
+					padding-top 5px
+					padding-left 25px
+					
+			&-confirm
+				flex-direction column
+				align-items flex-start
+				
+				p 
+					padding-top 10px
+					padding-left 0
+	
+
 	
