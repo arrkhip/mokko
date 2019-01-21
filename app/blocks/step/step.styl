@@ -1,0 +1,53 @@
+.step
+	display flex
+	justify-content space-between
+	align-items center
+
+	&__number
+		width 73px
+		height 70px
+		padding 12px 16px
+		border-radius 10px
+		background orange-dark
+		
+		span
+			font-weight 700
+			font-family font-second
+			vertical-align bottom
+			
+			&:nth-child(1)
+				font-size 4.2rem
+				line-height 2.6rem
+				
+			&:nth-child(2)
+				font-size 1.6rem
+				line-height 1.4rem
+				
+			&:nth-child(3)
+				display block
+				padding-top 5px
+				font-size 1.8rem
+				letter-spacing: 0.45px
+				
+	&__text
+		width calc(100% - 95px)
+		
+	&__title
+		margin-bottom 10px
+		font-size 2.2rem
+		font-weight 600
+		line-height 2.4rem
+		
+	&__descr
+		line-height 2.4rem
+		
+
+	+width-xs()
+		
+		&__title
+			font-size 1.8rem	
+			margin-bottom 5px
+			
+		&__descr
+			font-size 1.4rem
+			line-height 1.9rem
