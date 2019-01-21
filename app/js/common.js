@@ -119,4 +119,21 @@ $(window).on('resize', function(){
    return false;
  });
 
+
+// map
+
+   ymaps.ready(init);
+   function init () {
+    var myMap = new ymaps.Map('map', {
+     
+      center: [54.718354, 55.989018], 
+      zoom: 16
+    });
+    var myPlacemark = new ymaps.Placemark(
+      [54.718354, 55.989018]        
+      );
+    myMap.geoObjects.add(myPlacemark);
+  }
+
+
 });
