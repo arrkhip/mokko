@@ -137,6 +137,12 @@ var galleryThumbs = new Swiper('.product__slider-thumbs', {
     });
 
 
+// calculator card
+$('.calculator-page__card').click(function() {
+
+  $('.calculator-page__card').not($(this)).removeClass('active');
+  $(this).addClass('active');
+});
 
 // map
    ymaps.ready(init);
