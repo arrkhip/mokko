@@ -14,11 +14,11 @@ $(document).ready(function () {
   $(document).mouseup(function (e){
     var location = $('.header__location'); 
     if (!location.is(e.target) 
-        && location.has(e.target).length === 0) { 
+      && location.has(e.target).length === 0) { 
       location.find('.header__location-body').slideUp(); 
-      location.removeClass('header__location--active'); 
-    }
-  });
+    location.removeClass('header__location--active'); 
+  }
+});
 
   if($(window).width() < 767) {
     $('.header__entry').click(function() {
@@ -26,7 +26,7 @@ $(document).ready(function () {
     });
   }
 
-    $('.header__entry-icon--close').click(function() {
+  $('.header__entry-icon--close').click(function() {
     $.fancybox.close()
   });
 
@@ -122,19 +122,19 @@ $(window).on('resize', function(){
 
 // product slider
 var galleryThumbs = new Swiper('.product__slider-thumbs', {
-      spaceBetween: 10,
-      slidesPerView: 3,
-      freeMode: true,
-      watchSlidesVisibility: true,
-      watchSlidesProgress: true,
-    });
-    var galleryTop = new Swiper('.product__slider-top', {
-      spaceBetween: 30,
-      slidesPerView: 1,
-      thumbs: {
-        swiper: galleryThumbs
-      }
-    });
+  spaceBetween: 10,
+  slidesPerView: 3,
+  freeMode: true,
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+});
+var galleryTop = new Swiper('.product__slider-top', {
+  spaceBetween: 30,
+  slidesPerView: 1,
+  thumbs: {
+    swiper: galleryThumbs
+  }
+});
 
 
 // calculator card
@@ -153,41 +153,40 @@ $('input[type=tel]').inputmask({
 
 // input file add file path
 $(".file-upload input[type=file]").change(function(){
-var filename = $(this).val().replace(/.*\\/, "");
-$("#file-name").text(filename);
+  var filename = $(this).val().replace(/.*\\/, "");
+  $("#file-name").text(filename);
 });
 
 
-// ползунок
-
+// range
 $( ".calculator-page__range-line" ).slider({
-animate: true,
-range: "min",
-value: 10,
-min: 1,
-max: 20,
-step: 1,
- 
-slide: function( event, ui ) {
-$( ".calculator-page__range-result" ).html(ui.value);
-}
- 
+  animate: true,
+  range: "min",
+  value: 10,
+  min: 1,
+  max: 20,
+  step: 1,
+  
+  slide: function( event, ui ) {
+    $( ".calculator-page__range-result" ).html(ui.value);
+  }
+  
 });
 
 
 // map
-  //  ymaps.ready(init);
-  //  function init () {
-  //   var myMap = new ymaps.Map('map', {
-     
-  //     center: [54.718354, 55.989018], 
-  //     zoom: 16
-  //   });
-  //   var myPlacemark = new ymaps.Placemark(
-  //     [54.718354, 55.989018]        
-  //     );
-  //   myMap.geoObjects.add(myPlacemark);
-  // }
+ymaps.ready(init);
+function init () {
+  var myMap = new ymaps.Map('map', {
+   
+    center: [54.718354, 55.989018], 
+    zoom: 16
+  });
+  var myPlacemark = new ymaps.Placemark(
+    [54.718354, 55.989018]        
+    );
+  myMap.geoObjects.add(myPlacemark);
+}
 
 
 
