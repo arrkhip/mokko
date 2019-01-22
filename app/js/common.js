@@ -74,7 +74,7 @@ $(document).ready(function () {
   var mySwiper = undefined;
   function initSwiper() {
     var screenWidth = $(window).width();
-    if(screenWidth > 768 && mySwiper == undefined) {            
+    if(screenWidth > 680 && mySwiper == undefined) {            
       mySwiper = new Swiper('.slider-base', {            
        slidesPerView: 4,
        spaceBetween: 30,
@@ -84,7 +84,11 @@ $(document).ready(function () {
         prevEl: '.slider-base__arrow--prev',
       },
       breakpoints: {
-        992: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 10
+        },
+         992: {
           slidesPerView: 2,
           spaceBetween: 143
         },
@@ -94,11 +98,11 @@ $(document).ready(function () {
         }
       }
     });
-    } else if (screenWidth < 768 && mySwiper != undefined) {
-      mySwiper.destroy();
+    } else if (screenWidth < 680 && mySwiper != undefined) {
+      swiper.detachEvents();
       mySwiper = undefined;
-      jQuery('.swiper-wrapper').removeAttr('style');
-      jQuery('.swiper-slide').removeAttr('style');            
+      $('.swiper-wrapper').removeAttr('style');
+      $('.swiper-slide').removeAttr('style');            
     }        
   }
 
