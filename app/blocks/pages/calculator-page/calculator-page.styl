@@ -96,6 +96,25 @@
 		p 
 			font-style italic
 			line-height 2.4rem
+			
+	&__form
+		
+		.input,
+		.textarea
+			width 100%
+			max-width 570px
+			margin-top 25px
+			
+		.input
+			margin-bottom 60px
+			
+		span
+			display inline-block
+			margin-top 38px
+			margin-left 25px
+			font-style italic
+			
+			
 
 	+width-lg()
 	
@@ -118,6 +137,10 @@
 			
 			&:nth-child(6n)
 				margin-right 22px
+		
+		&__form span
+			margin-left 0
+			margin-top -50px
 				
 
 	+width-sm()
