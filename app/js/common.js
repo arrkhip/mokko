@@ -144,6 +144,7 @@ $('.calculator-page__card').click(function() {
   $(this).addClass('active');
 });
 
+
 // map
    ymaps.ready(init);
    function init () {
@@ -157,5 +158,7 @@ $('.calculator-page__card').click(function() {
       );
     myMap.geoObjects.add(myPlacemark);
   }
+
+
 
 });
