@@ -117,9 +117,13 @@ textarea:focus:-ms-input-placeholder
     opacity 0
     
     & + label 
+      width cacl(100% - 35px)
       position relative
-      padding-left 35px
+      left 35px
       font-size 1.5rem
+      line-height 1.5em
+      word-wrap break-word
+       
       
       &:hover
         cursor pointer
@@ -128,7 +132,7 @@ textarea:focus:-ms-input-placeholder
         content '\2714'
         position absolute
         top 0
-        left 0
+        left -35px
         width 20px
         height 20px
         border-radius 2px
@@ -153,8 +157,10 @@ textarea:focus:-ms-input-placeholder
     
     & + label 
       position relative
-      padding-left 35px
+      left 35px
       font-size 1.5rem
+      line-height 1.5em
+      word-wrap break-word
       
       &:hover
         cursor pointer
@@ -163,7 +169,7 @@ textarea:focus:-ms-input-placeholder
         content ''
         position absolute
         top 0
-        left 0
+        left -35px
         width 20px
         height 20px
         border-radius 50%
@@ -173,7 +179,7 @@ textarea:focus:-ms-input-placeholder
         content ''
         position absolute
         top 6px
-        left 6px
+        left -29px
         width 10px
         height 10px
         border-radius 50%
