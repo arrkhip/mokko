@@ -30,6 +30,14 @@ $(document).ready(function () {
     $.fancybox.close()
   });
 
+// $('.header__entry-link').click(function() {
+//     if ($('.fancybox-is-open') !== null) {
+//        $.fancybox.close()
+//     } else {
+//         // infowindow.open( map, marker );
+//     }
+// });
+
   $('.header__nav-item').click(function(e){
     e.preventDefault();
     $('.header__nav-item-arrow').toggleClass('header__nav-item-arrow--active');
@@ -166,11 +174,11 @@ $( ".calculator-page__range-line" ).slider({
   min: 1,
   max: 20,
   step: 1,
-  
+
   slide: function( event, ui ) {
     $( ".calculator-page__range-result" ).html(ui.value);
   }
-  
+
 });
 
 
@@ -178,7 +186,7 @@ $( ".calculator-page__range-line" ).slider({
 ymaps.ready(init);
 function init () {
   var myMap = new ymaps.Map('map', {
-   
+
     center: [54.718354, 55.989018], 
     zoom: 16
   });
