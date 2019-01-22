@@ -69,8 +69,7 @@ let path = {
       "./app/libs/jquery/jquery-3.1.1.min.js",
       "./app/libs/fancybox/jquery.fancybox.min.js",
       "./app/libs/powerange/powerange.min.js",
-      "./app/libs/input-mask/inputmask.min.js",
-      "./app/libs/input-mask/jquery.inputmask.min.js",
+      "./app/libs/input-mask/jquery.inputmask.bundle.js",
       "./app/libs/swiper/swiper.min.js"
     ]
   },

@@ -145,6 +145,13 @@ $('.calculator-page__card').click(function() {
 });
 
 
+// phone mask 
+$('input[type=tel]').inputmask({
+  "mask": "+7 (999) 999-99-99"
+});
+
+
+// input file add file path
 $(".file-upload input[type=file]").change(function(){
 var filename = $(this).val().replace(/.*\\/, "");
 $("#file-name").text(filename);
