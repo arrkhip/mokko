@@ -160,20 +160,16 @@ $("#file-name").text(filename);
 
 // ползунок
 
-$( ".slider" ).slider({
+$( ".calculator-page__range-line" ).slider({
 animate: true,
 range: "min",
-value: 0,
+value: 10,
 min: 1,
-max: 100,
+max: 20,
 step: 1,
  
 slide: function( event, ui ) {
-$( "#slider-result" ).html(ui.value);
-},
- 
-change: function(event, ui) {
-$('#znch').attr('value', ui.value);
+$( ".calculator-page__range-result" ).html(ui.value);
 }
  
 });
