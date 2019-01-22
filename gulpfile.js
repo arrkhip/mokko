@@ -62,13 +62,12 @@ let path = {
     css: [
       "./app/libs/normalize/normalize.css",
       "./app/libs/fancybox/jquery.fancybox.min.css",
-      "./app/libs/powerange/powerange.min.css",
       "./app/libs/swiper/swiper.min.css"
     ],
     js: [
       "./app/libs/jquery/jquery-3.1.1.min.js",
+      "./app/libs/jquery-ui/jquery-ui.min.js",
       "./app/libs/fancybox/jquery.fancybox.min.js",
-      "./app/libs/powerange/powerange.min.js",
       "./app/libs/input-mask/jquery.inputmask.bundle.js",
       "./app/libs/swiper/swiper.min.js"
     ]

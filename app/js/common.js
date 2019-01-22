@@ -158,19 +158,40 @@ $("#file-name").text(filename);
 });
 
 
+// ползунок
+
+$( ".slider" ).slider({
+animate: true,
+range: "min",
+value: 0,
+min: 1,
+max: 100,
+step: 1,
+ 
+slide: function( event, ui ) {
+$( "#slider-result" ).html(ui.value);
+},
+ 
+change: function(event, ui) {
+$('#znch').attr('value', ui.value);
+}
+ 
+});
+
+
 // map
-   ymaps.ready(init);
-   function init () {
-    var myMap = new ymaps.Map('map', {
+  //  ymaps.ready(init);
+  //  function init () {
+  //   var myMap = new ymaps.Map('map', {
      
-      center: [54.718354, 55.989018], 
-      zoom: 16
-    });
-    var myPlacemark = new ymaps.Placemark(
-      [54.718354, 55.989018]        
-      );
-    myMap.geoObjects.add(myPlacemark);
-  }
+  //     center: [54.718354, 55.989018], 
+  //     zoom: 16
+  //   });
+  //   var myPlacemark = new ymaps.Placemark(
+  //     [54.718354, 55.989018]        
+  //     );
+  //   myMap.geoObjects.add(myPlacemark);
+  // }
 
 
 
