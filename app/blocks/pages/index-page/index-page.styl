@@ -32,7 +32,7 @@
 		padding-top 175px
 		padding-bottom 225px
 		background url('../img/constructor-bg.png') no-repeat center/cover
-		
+	
 		&-title
 			margin-bottom 15px
 			font 700 5.5rem/6rem font-second
@@ -71,6 +71,14 @@
 		padding-top 45px
 
 
+	+width-lg()
+	
+		&__constructor
+			padding-top 100px
+			padding-bottom 110px
+			background-image url('../img/constructor-bg-md.png')
+			background-position-x 15%
+
 	+width-sm()
 	
 		&__plus
@@ -101,10 +109,7 @@
 				
 	
 		&__constructor
-			padding-top 120px
-			padding-bottom 280px
-			background-image url('../img/constructor-bg-sm.jpg')
-			
+
 			&-title
 				font-size 3.2rem
 				line-height 4.2rem
@@ -112,6 +117,15 @@
 			&-descr
 				font-size 2.2rem
 				line-height 2.6rem
+				
+	+width-xs()
+		
+		&__constructor
+			padding-top 80px
+			padding-bottom 100px
+			background-image url('../img/constructor-bg-sm.jpg')
+			background-position-y top
+			
 
 
 
