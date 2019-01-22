@@ -145,6 +145,12 @@ $('.calculator-page__card').click(function() {
 });
 
 
+$(".file-upload input[type=file]").change(function(){
+var filename = $(this).val().replace(/.*\\/, "");
+$("#file-name").text(filename);
+});
+
+
 // map
    ymaps.ready(init);
    function init () {
