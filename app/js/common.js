@@ -110,8 +110,8 @@ var galleryTop = new Swiper('.product__slider-top', {
 // calculator card
 $('.calculator-page__card').click(function() {
 
-  $('.calculator-page__card').not($(this)).removeClass('active');
-  $(this).addClass('active');
+  $('.calculator-page__card').not($(this)).removeClass('calculator-page__card--active');
+  $(this).addClass('calculator-page__card--active');
 });
 
 
