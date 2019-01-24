@@ -89,15 +89,18 @@ $('.header__nav-item').click(function(e){
 
 // product slider
 var galleryThumbs = new Swiper('.product__slider-thumbs', {
-  spaceBetween: 10,
+  spaceBetween: 30,
   slidesPerView: 3,
   freeMode: true,
   watchSlidesVisibility: true,
   watchSlidesProgress: true,
+   breakpoints: {
+        480: {
+          spaceBetween: 10,
+        }
+      }
 });
 var galleryTop = new Swiper('.product__slider-top', {
-  spaceBetween: 30,
-  slidesPerView: 1,
   thumbs: {
     swiper: galleryThumbs
   }
