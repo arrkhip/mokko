@@ -37,11 +37,11 @@ $(document).ready(function () {
   });
 
 
-$('.header__nav-item').click(function(e){
-  e.preventDefault();
-  $('.header__nav-item-arrow').toggleClass('header__nav-item-arrow--active');
-  $(this).find('.header__nav-sublist').slideToggle();
-});
+  $('.header__nav-item').click(function(e){
+    e.preventDefault();
+    $('.header__nav-item-arrow').toggleClass('header__nav-item-arrow--active');
+    $(this).find('.header__nav-sublist').slideToggle();
+  });
 
 
   // tabs
@@ -89,11 +89,11 @@ var galleryThumbs = new Swiper('.product__slider-thumbs', {
   freeMode: true,
   watchSlidesVisibility: true,
   watchSlidesProgress: true,
-   breakpoints: {
-        480: {
-          spaceBetween: 10,
-        }
-      }
+  breakpoints: {
+    480: {
+      spaceBetween: 10,
+    }
+  }
 });
 var galleryTop = new Swiper('.product__slider-top', {
   thumbs: {
@@ -104,8 +104,7 @@ var galleryTop = new Swiper('.product__slider-top', {
 
 // calculator card
 $('.calculator-page__card').click(function() {
-
-  $('.calculator-page__card').not($(this)).removeClass('calculator-page__card--active');
+  $(this).parent().find('.calculator-page__card').removeClass('calculator-page__card--active');
   $(this).addClass('calculator-page__card--active');
 });
 
@@ -140,18 +139,18 @@ $( ".calculator-page__range-line" ).slider({
 
 // map
 if($("#map").length > 0) {
-ymaps.ready(init);
-function init () {
-  var myMap = new ymaps.Map('map', {
+  ymaps.ready(init);
+  function init () {
+    var myMap = new ymaps.Map('map', {
 
-    center: [54.718354, 55.989018], 
-    zoom: 16
-  });
-  var myPlacemark = new ymaps.Placemark(
-    [54.718354, 55.989018]        
-    );
-  myMap.geoObjects.add(myPlacemark);
-}
+      center: [54.718354, 55.989018], 
+      zoom: 16
+    });
+    var myPlacemark = new ymaps.Placemark(
+      [54.718354, 55.989018]        
+      );
+    myMap.geoObjects.add(myPlacemark);
+  }
 }
 
 
@@ -299,30 +298,30 @@ function initSwiper() {
     $('.slider-base').each(function(){
       mySwiper = new Swiper(this, {            
         slidesPerView: 4,
-          spaceBetween: 30,
-          loop: !0,
-          navigation: {
-            nextEl: '.slider-base__arrow--next',
-            prevEl: '.slider-base__arrow--prev',
+        spaceBetween: 30,
+        loop: !0,
+        navigation: {
+          nextEl: '.slider-base__arrow--next',
+          prevEl: '.slider-base__arrow--prev',
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 10
           },
-          breakpoints: {
-            768: {
-              slidesPerView: 2,
-              spaceBetween: 10
-            },
-            992: {
-              slidesPerView: 2,
-              spaceBetween: 143
-            },
-            1200: {
-              slidesPerView: 3,
-              spaceBetween: 60
-            }
-            }
+          992: {
+            slidesPerView: 2,
+            spaceBetween: 143
+          },
+          1200: {
+            slidesPerView: 3,
+            spaceBetween: 60
+          }
+        }
       });
     });        
   } else if (screenWidth < 767 && mySwiper != undefined) {            
-     $('.slider-base').each(function(){
+   $('.slider-base').each(function(){
       // this.mySwiper.destroy();
       this[0].mySwiper.destroy();
       mySwiper.destroy();
@@ -330,7 +329,7 @@ function initSwiper() {
       jQuery('.swiper-wrapper').removeAttr('style');
       jQuery('.swiper-slide').removeAttr('style');
     });    
-  }        
+ }        
 }
 //Swiper plugin initialization
 initSwiper();    
