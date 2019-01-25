@@ -21,22 +21,21 @@ $(document).ready(function () {
 });
 
   if($(window).width() < 767) {
-    $('.header__entry').click(function() {
+    $('.header__entry-icon').click(function() {
       $('.header__entry-icon').toggle();
     });
   }
 
   $('.header__entry-icon--close').click(function() {
-    $.fancybox.close()
+    $.fancybox.close();
   });
 
-// $('.header__entry-link').click(function() {
-//     if ($('.fancybox-is-open') !== null) {
-//        $.fancybox.close()
-//     } else {
-//         // infowindow.open( map, marker );
-//     }
-// });
+
+  $('.header__entry-icon--open').fancybox({
+    src  : '#modal-entry',
+    smallBtn: false
+  });
+
 
 $('.header__nav-item').click(function(e){
   e.preventDefault();
@@ -52,6 +51,7 @@ $('.header__nav-item').click(function(e){
     .closest('.tabs').find('.tabs__content').removeClass('tabs__content--active').eq($(this).index()).addClass('tabs__content--active');
   });
 
+
   // promo slider
   var swiper = new Swiper('.promo__slider', {
   	speed: 700,
@@ -62,11 +62,6 @@ $('.header__nav-item').click(function(e){
   			return '<span class="' + className + '">' + (index + 1) + '</span>';
   		},
   	},
-  });
-
-
-  $('[data-fancybox]').fancybox({
-
   });
 
 
@@ -140,7 +135,6 @@ $( ".calculator-page__range-line" ).slider({
   slide: function( event, ui ) {
     $( ".calculator-page__range-result" ).html(ui.value);
   }
-
 });
 
 
@@ -328,10 +322,9 @@ function initSwiper() {
   } else if (screenWidth < 767 && mySwiper != undefined) {            
      $('.slider-base').each(function(){
       // this.mySwiper.destroy();
-      // this[0].mySwiper.destroy();
+      this[0].mySwiper.destroy();
       mySwiper.destroy();
       mySwiper = undefined;
-      // console.log("destroy");
       jQuery('.swiper-wrapper').removeAttr('style');
       jQuery('.swiper-slide').removeAttr('style');
     });    
