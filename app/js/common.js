@@ -139,18 +139,20 @@ $( ".calculator-page__range-line" ).slider({
 
 
 // map
-// ymaps.ready(init);
-// function init () {
-//   var myMap = new ymaps.Map('map', {
+if($("#map").length > 0) {
+ymaps.ready(init);
+function init () {
+  var myMap = new ymaps.Map('map', {
 
-//     center: [54.718354, 55.989018], 
-//     zoom: 16
-//   });
-//   var myPlacemark = new ymaps.Placemark(
-//     [54.718354, 55.989018]        
-//     );
-//   myMap.geoObjects.add(myPlacemark);
-// }
+    center: [54.718354, 55.989018], 
+    zoom: 16
+  });
+  var myPlacemark = new ymaps.Placemark(
+    [54.718354, 55.989018]        
+    );
+  myMap.geoObjects.add(myPlacemark);
+}
+}
 
 
 // slider-base
