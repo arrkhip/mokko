@@ -69,7 +69,8 @@ let path = {
       "./app/libs/jquery-ui/jquery-ui.min.js",
       "./app/libs/fancybox/jquery.fancybox.min.js",
       "./app/libs/input-mask/jquery.inputmask.bundle.js",
-      "./app/libs/swiper/swiper.min.js"
+      "./app/libs/swiper/swiper.min.js",
+      "./app/libs/svg4everybody/svg4everybody.min.js"
     ]
   },
   watch: {

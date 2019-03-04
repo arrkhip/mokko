@@ -1,5 +1,8 @@
 $(document).ready(function () {
 
+  //init svg4everybody
+  svg4everybody();
+  
   // header
   $('.header__switch').click(function() {
     $('.header__switch svg').toggle();
